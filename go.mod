@@ -1,4 +1,4 @@
-module ClusterLens
+module github.com/jignyasamishra/ClusterLens
 
 go 1.21.6
 

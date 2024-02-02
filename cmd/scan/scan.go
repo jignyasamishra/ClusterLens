@@ -1,4 +1,4 @@
-package check
+package scan
 
 import (
 	"context"
@@ -24,9 +24,9 @@ var (
 	data       [][]string
 )
 
-var CheckCmd = &cobra.Command{
+var ScanCmd = &cobra.Command{
 	Use:   "scan",
-	Short: "Check your Kubernetes cluster to see it's current status",
+	Short: "Scan your Kubernetes cluster to see it's current status",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		if logger {
@@ -153,7 +153,7 @@ func readData(kubeconfig string, namespaces []string) error {
 }
 
 func init() {
-	CheckCmd.Flags().StringVarP(&kubeconfig, "kubeconfig", "k", "", "Kubeconfig file location")
-	CheckCmd.Flags().BoolVarP(&logger, "logger", "l", false, "Enable logging")
-	CheckCmd.Flags().StringSliceP("namespaces", "n", []string{}, "Provide a namespace to get status from")
+	ScanCmd.Flags().StringVarP(&kubeconfig, "kubeconfig", "k", "", "Kubeconfig file location")
+	ScanCmd.Flags().BoolVarP(&logger, "logger", "l", false, "Enable logging")
+	ScanCmd.Flags().StringSliceP("namespaces", "n", []string{}, "Provide a namespace to get status from")
 }
