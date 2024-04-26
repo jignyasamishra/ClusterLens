@@ -17,6 +17,6 @@ Follow these steps to install ClusterLens:
 
 2. **Clone the Repository**: Use the command `git clone https://github.com/jignyasamishra/clusterlens.git` to clone the repository.
 
-3. **Navigate to the Directory**: Use the command `cd clusterscan` to navigate into the project directory.
+3. **Navigate to the Directory**: Use the command `cd clusterlens` to navigate into the project directory.
 
 4. **Build the Project**: Use the command `go build -o clusterlens .` to build the project. This command builds the project and outputs the binary file as `clusterlens`.
