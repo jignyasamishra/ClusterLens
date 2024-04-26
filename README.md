@@ -5,7 +5,7 @@ ClusterLens is a command-line tool for scanning Kubernetes clusters to generate 
 - Namespace Support: Specify namespaces to focus the scan on specific parts of the cluster.
 - Logging: Enable logging to track the scanning process and any encountered errors.
 # Flags
-
+### Currently there exists a single sub-command 'check' with 3 flags:
 - `-kubeconfig`: Specify the location of the kubeconfig file.
 - `--logger`: Enable logging to track the scanning process.
 - `--namespaces (-n)`: Provide a list of namespaces to focus the scan.
